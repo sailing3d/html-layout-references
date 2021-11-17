@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="flex.css" />
+  </head>
+  <body>
+    <h1>HTML Layout References</h1>
+    <h2>Table</h2>
+    <h3>Flexible Table</h3>
+    <p>变宽表格根据内容多少撑开宽度。可以指定某列的最大宽度限制。</p>
+    <div class="table-container">
+      <table class="table flexible-table table-1">
+        <caption>
+          table-1
+        </caption>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Date</th>
+            <th>Address</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mexico</td>
+            <td>2021-05-21T12:29:29+08:00</td>
+            <td>1813 Kotu Boulevard</td>
+            <td>vi@vej.net</td>
+          </tr>
+          <tr>
+            <td>Monaco</td>
+            <td>2021-05-09T16:30:59+08:00</td>
+            <td>1126 Hiib Turnpike</td>
+            <td>duv@ca.mn</td>
+          </tr>
+          <tr>
+            <td>Dominica</td>
+            <td>2021-06-29T23:43:50+08:00</td>
+            <td>519 Vame Pike</td>
+            <td>di@dakub.si</td>
+          </tr>
+          <tr>
+            <td>United States</td>
+            <td>2021-01-04T04:53:59+08:00</td>
+            <td>1293 Mohhuf River</td>
+            <td>waozujo@ma.bv</td>
+          </tr>
+          <tr>
+            <td>Swaziland</td>
+            <td>2021-03-07T13:31:11+08:00</td>
+            <td>1645 Wajes Way</td>
+            <td>iktam@mijkuzje.jp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Fixed Table</h3>
+    <p>定宽表格无论内容多少, 各列都会有固定宽度。</p>
+    <ul>
+      <li>同时指定每一列的最大最小宽度 max-width, min-width</li>
+      <li>应用文字缩略样式</li>
+    </ul>
+    <div class="table-container">
+      <table class="table fixed-table table-2">
+        <caption>
+          table-2
+        </caption>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Date</th>
+            <th>Address</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mexico</td>
+            <td>2021-05-21T12:29:29+08:00</td>
+            <td>1813 Kotu Boulevard</td>
+            <td>vi@vej.net</td>
+          </tr>
+          <tr>
+            <td>Monaco</td>
+            <td>2021-05-09T16:30:59+08:00</td>
+            <td>1126 Hiib Turnpike</td>
+            <td>duv@ca.mn</td>
+          </tr>
+          <tr>
+            <td>Dominica</td>
+            <td>2021-06-29T23:43:50+08:00</td>
+            <td>519 Vame Pike</td>
+            <td>di@dakub.si</td>
+          </tr>
+          <tr>
+            <td>United States</td>
+            <td>2021-01-04T04:53:59+08:00</td>
+            <td>1293 Mohhuf River</td>
+            <td>waozujo@ma.bv</td>
+          </tr>
+          <tr>
+            <td>Swaziland</td>
+            <td>2021-03-07T13:31:11+08:00</td>
+            <td>1645 Wajes Way</td>
+            <td>iktam@mijkuzje.jp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Adaptive Table</h3>
+    <p>自适应表格根据父节点的宽度撑开宽度。</p>
+    <ul>
+      <li>指定表格的最小宽度 min-width</li>
+      <li>指定每一列的最大宽度 max-width</li>
+      <li>优先使用宽度的列用百分比指定宽度 width: 30%</li>
+      <li>应用文字缩略样式</li>
+    </ul>
+    <div class="table-container">
+      <table class="table adaptive-table table-3">
+        <caption>
+          table-3
+        </caption>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Date</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>URL</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mexico</td>
+            <td>2021-05-21T12:29:29+08:00</td>
+            <td>1813 Kotu Boulevard</td>
+            <td>vi@vej.net</td>
+            <td>http://hebelu.fm/ponhufgo</td>
+            <!-- prettier-ignore -->
+            <td>Lorem ipsum dolor sit amet, commodo esse deserunt magna tempor commodo aliqua laborum exercitation nostrud incididunt elit eiusmod anim officia officia ad qui dolore laboris sit consequat culpa deserunt sunt ex nostrud pariatur dolor deserunt ea nostrud proident irure adipisicing pariatur excepteur quis adipisicing mollit duis cillum ad irure enim commodo proident Lorem incididunt irure amet officia cupidatat commodo sunt magna excepteur et mollit aute consequat Lorem cillum ad non enim Lorem elit est consectetur ex et sunt minim veniam nostrud consequat in laboris reprehenderit tempor aliqua enim elit ipsum labore ea nulla Lorem incididunt cillum ad nisi aute cupidatat do dolor eiusmod incididunt dolor aute veniam minim culpa irure pariatur id sint aliquip aliqua magna nulla proident consectetur magna voluptate velit est ut culpa minim ea id ea proident excepteur esse ipsum et veniam ullamco mollit irure proident quis aliquip consectetur non cillum commodo consectetur veniam aute culpa elit nulla voluptate laborum esse veniam incididunt ea Lorem incididunt nisi fugiat laboris laboris pariatur velit est aliquip occaecat consectetur eu est duis eiusmod commodo cupidatat cillum cupidatat sit aute anim nisi labore proident eiusmod labore excepteur et tempor nulla aliqua exercitation sit esse nisi nisi cupidatat magna ullamco nisi sit tempor veniam amet esse elit mollit do duis anim dolor minim exercitation aute esse anim consectetur est minim culpa amet aute aliqua fugiat mollit pariatur excepteur qui quis consectetur anim deserunt deserunt nostrud eu culpa officia occaecat do eu proident nulla laboris duis laboris magna nisi tempor eu aliquip proident deserunt fugiat proident tempor Lorem</td>
+          </tr>
+          <tr>
+            <td>Monaco</td>
+            <td>2021-05-09T16:30:59+08:00</td>
+            <td>1126 Hiib Turnpike</td>
+            <td>duv@ca.mn</td>
+            <td>http://suk.tv/esiojhok</td>
+            <!-- prettier-ignore -->
+            <td>Lorem ipsum dolor sit amet, commodo esse deserunt magna tempor commodo aliqua laborum exercitation nostrud incididunt elit eiusmod anim officia officia ad qui dolore laboris sit consequat culpa deserunt sunt ex nostrud pariatur dolor deserunt ea nostrud proident irure adipisicing pariatur excepteur quis adipisicing mollit duis cillum ad irure enim commodo proident Lorem incididunt irure amet officia cupidatat commodo sunt magna excepteur et mollit aute consequat Lorem cillum ad non enim Lorem elit est consectetur ex et sunt minim veniam nostrud consequat in laboris reprehenderit tempor aliqua enim elit ipsum labore ea nulla Lorem incididunt cillum ad nisi aute cupidatat do dolor eiusmod incididunt dolor aute veniam minim culpa irure pariatur id sint aliquip aliqua magna nulla proident consectetur magna voluptate velit est ut culpa minim ea id ea proident excepteur esse ipsum et veniam ullamco mollit irure proident quis aliquip consectetur non cillum commodo consectetur veniam aute culpa elit nulla voluptate laborum esse veniam incididunt ea Lorem incididunt nisi fugiat laboris laboris pariatur velit est aliquip occaecat consectetur eu est duis eiusmod commodo cupidatat cillum cupidatat sit aute anim nisi labore proident eiusmod labore excepteur et tempor nulla aliqua exercitation sit esse nisi nisi cupidatat magna ullamco nisi sit tempor veniam amet esse elit mollit do duis anim dolor minim exercitation aute esse anim consectetur est minim culpa amet aute aliqua fugiat mollit pariatur excepteur qui quis consectetur anim deserunt deserunt nostrud eu culpa officia occaecat do eu proident nulla laboris duis laboris magna nisi tempor eu aliquip proident deserunt fugiat proident tempor Lorem</td>
+          </tr>
+          <tr>
+            <td>Dominica</td>
+            <td>2021-06-29T23:43:50+08:00</td>
+            <td>519 Vame Pike</td>
+            <td>di@dakub.si</td>
+            <td>http://we.fr/urojol</td>
+            <!-- prettier-ignore -->
+            <td>Lorem ipsum dolor sit amet, commodo esse deserunt magna tempor commodo aliqua laborum exercitation nostrud incididunt elit eiusmod anim officia officia ad qui dolore laboris sit consequat culpa deserunt sunt ex nostrud pariatur dolor deserunt ea nostrud proident irure adipisicing pariatur excepteur quis adipisicing mollit duis cillum ad irure enim commodo proident Lorem incididunt irure amet officia cupidatat commodo sunt magna excepteur et mollit aute consequat Lorem cillum ad non enim Lorem elit est consectetur ex et sunt minim veniam nostrud consequat in laboris reprehenderit tempor aliqua enim elit ipsum labore ea nulla Lorem incididunt cillum ad nisi aute cupidatat do dolor eiusmod incididunt dolor aute veniam minim culpa irure pariatur id sint aliquip aliqua magna nulla proident consectetur magna voluptate velit est ut culpa minim ea id ea proident excepteur esse ipsum et veniam ullamco mollit irure proident quis aliquip consectetur non cillum commodo consectetur veniam aute culpa elit nulla voluptate laborum esse veniam incididunt ea Lorem incididunt nisi fugiat laboris laboris pariatur velit est aliquip occaecat consectetur eu est duis eiusmod commodo cupidatat cillum cupidatat sit aute anim nisi labore proident eiusmod labore excepteur et tempor nulla aliqua exercitation sit esse nisi nisi cupidatat magna ullamco nisi sit tempor veniam amet esse elit mollit do duis anim dolor minim exercitation aute esse anim consectetur est minim culpa amet aute aliqua fugiat mollit pariatur excepteur qui quis consectetur anim deserunt deserunt nostrud eu culpa officia occaecat do eu proident nulla laboris duis laboris magna nisi tempor eu aliquip proident deserunt fugiat proident tempor Lorem</td>
+          </tr>
+          <tr>
+            <td>United States</td>
+            <td>2021-01-04T04:53:59+08:00</td>
+            <td>1293 Mohhuf River</td>
+            <td>waozujo@ma.bv</td>
+            <td>http://vugek.ye/am</td>
+            <!-- prettier-ignore -->
+            <td>Lorem ipsum dolor sit amet, commodo esse deserunt magna tempor commodo aliqua laborum exercitation nostrud incididunt elit eiusmod anim officia officia ad qui dolore laboris sit consequat culpa deserunt sunt ex nostrud pariatur dolor deserunt ea nostrud proident irure adipisicing pariatur excepteur quis adipisicing mollit duis cillum ad irure enim commodo proident Lorem incididunt irure amet officia cupidatat commodo sunt magna excepteur et mollit aute consequat Lorem cillum ad non enim Lorem elit est consectetur ex et sunt minim veniam nostrud consequat in laboris reprehenderit tempor aliqua enim elit ipsum labore ea nulla Lorem incididunt cillum ad nisi aute cupidatat do dolor eiusmod incididunt dolor aute veniam minim culpa irure pariatur id sint aliquip aliqua magna nulla proident consectetur magna voluptate velit est ut culpa minim ea id ea proident excepteur esse ipsum et veniam ullamco mollit irure proident quis aliquip consectetur non cillum commodo consectetur veniam aute culpa elit nulla voluptate laborum esse veniam incididunt ea Lorem incididunt nisi fugiat laboris laboris pariatur velit est aliquip occaecat consectetur eu est duis eiusmod commodo cupidatat cillum cupidatat sit aute anim nisi labore proident eiusmod labore excepteur et tempor nulla aliqua exercitation sit esse nisi nisi cupidatat magna ullamco nisi sit tempor veniam amet esse elit mollit do duis anim dolor minim exercitation aute esse anim consectetur est minim culpa amet aute aliqua fugiat mollit pariatur excepteur qui quis consectetur anim deserunt deserunt nostrud eu culpa officia occaecat do eu proident nulla laboris duis laboris magna nisi tempor eu aliquip proident deserunt fugiat proident tempor Lorem</td>
+          </tr>
+          <tr>
+            <td>Swaziland</td>
+            <td>2021-03-07T13:31:11+08:00</td>
+            <td>1645 Wajes Way</td>
+            <td>iktam@mijkuzje.jp</td>
+            <td>http://eh.in/dicenjad</td>
+            <!-- prettier-ignore -->
+            <td>Lorem ipsum dolor sit amet, commodo esse deserunt magna tempor commodo aliqua laborum exercitation nostrud incididunt elit eiusmod anim officia officia ad qui dolore laboris sit consequat culpa deserunt sunt ex nostrud pariatur dolor deserunt ea nostrud proident irure adipisicing pariatur excepteur quis adipisicing mollit duis cillum ad irure enim commodo proident Lorem incididunt irure amet officia cupidatat commodo sunt magna excepteur et mollit aute consequat Lorem cillum ad non enim Lorem elit est consectetur ex et sunt minim veniam nostrud consequat in laboris reprehenderit tempor aliqua enim elit ipsum labore ea nulla Lorem incididunt cillum ad nisi aute cupidatat do dolor eiusmod incididunt dolor aute veniam minim culpa irure pariatur id sint aliquip aliqua magna nulla proident consectetur magna voluptate velit est ut culpa minim ea id ea proident excepteur esse ipsum et veniam ullamco mollit irure proident quis aliquip consectetur non cillum commodo consectetur veniam aute culpa elit nulla voluptate laborum esse veniam incididunt ea Lorem incididunt nisi fugiat laboris laboris pariatur velit est aliquip occaecat consectetur eu est duis eiusmod commodo cupidatat cillum cupidatat sit aute anim nisi labore proident eiusmod labore excepteur et tempor nulla aliqua exercitation sit esse nisi nisi cupidatat magna ullamco nisi sit tempor veniam amet esse elit mollit do duis anim dolor minim exercitation aute esse anim consectetur est minim culpa amet aute aliqua fugiat mollit pariatur excepteur qui quis consectetur anim deserunt deserunt nostrud eu culpa officia occaecat do eu proident nulla laboris duis laboris magna nisi tempor eu aliquip proident deserunt fugiat proident tempor Lorem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Flex</h2>
+    <h3>Flex Row</h3>
+    <div class="flex-container">
+      <div class="flex flex-row">
+        <div class="flex-cell flex-grow foo">
+          <div class="box"></div>
+        </div>
+        <div class="flex-cell">
+          <div class="box"></div>
+        </div>
+        <div class="flex-cell">
+          <div class="box"></div>
+        </div>
+        <div class="flex-cell">
+          <div class="box"></div>
+        </div>
+        <div class="flex-cell">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <h3>Flex Column</h3>
+    <div class="flex-container" style="width: 20px; height: 300px">
+      <div class="flex flex-col">
+        <div class="flex flex-cell flex-grow foo">
+          <div class="box"></div>
+        </div>
+        <div class="flex flex-cell"><div class="box"></div></div>
+        <div class="flex flex-cell"><div class="box"></div></div>
+        <div class="flex flex-cell"><div class="box"></div></div>
+        <div class="flex flex-cell"><div class="box"></div></div>
+      </div>
+    </div>
+    <h3>Flex Layout</h3>
+    <ul>
+      <li>
+        按正确顺序使用 flex-container, flex-col, flex-row, flex-cell,
+        否则可能排列不整齐
+      </li>
+      <li>自动展开的单元用 flex-grow</li>
+      <li>
+        要使用滚动条的 cell 应添加 scroll-x 或 scroll-y 类,
+        其所有父结点(直至某个有高度的结点为止)均需要添加 scroll-wrapper
+      </li>
+    </ul>
+    <div class="flex-container" style="height: 400px">
+      <div class="flex flex-col">
+        <div class="flex flex-row">
+          <div class="flex flex-cell flex-grow">
+            <div class="box">
+              Lorem ipsum dolor sit amet, nisi proident ullamco commodo ad
+              ullamco sint fugiat excepteur reprehenderit
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row flex-grow scroll-wrapper">
+          <div class="flex flex-cell">
+            <div class="box"></div>
+          </div>
+          <div
+            class="flex flex-cell scroll-wrapper"
+            style="max-width: 200px; flex: 1"
+          >
+            <div class="box scroll scroll-y">
+              <!-- prettier-ignore -->
+              Lorem ipsum dolor sit amet, ex occaecat aliqua tempor aliquip eiusmod ad qui et adipisicing deserunt ad consequat excepteur ex officia officia. Enim mollit reprehenderit voluptate tempor amet esse eiusmod laboris. Est ut duis sunt qui reprehenderit anim veniam sint elit adipisicing. Tempor consectetur ut ad pariatur laborum non enim eiusmod aliquip laboris voluptate ut tempor cillum elit Lorem occaecat. Labore quis proident ex veniam exercitation sit.
+            </div>
+          </div>
+          <div class="flex flex-col flex-grow scroll-wrapper" style="flex: 2">
+            <div class="flex flex-cell">
+              <div class="box">
+                <!-- prettier-ignore -->
+                Lorem ipsum dolor sit amet, ex occaecat aliqua tempor aliquip eiusmod ad qui et adipisicing deserunt ad consequat excepteur ex officia officia. Enim mollit reprehenderit voluptate tempor amet esse eiusmod laboris. Est ut duis sunt qui reprehenderit anim veniam sint elit adipisicing. Tempor consectetur ut ad pariatur laborum non enim eiusmod aliquip laboris voluptate ut tempor cillum elit Lorem occaecat. Labore quis proident ex veniam exercitation sit.
+              </div>
+            </div>
+            <div class="flex flex-row flex-grow scroll-wrapper">
+              <div class="flex flex-cell flex-grow scroll-wrapper">
+                <div class="box scroll scroll-y">
+                  <!-- prettier-ignore -->
+                  Lorem ipsum dolor sit amet, laboris aliqua consectetur sit non aliqua proident ea occaecat incididunt sunt dolor non consequat proident fugiat reprehenderit ut ea laboris culpa sint incididunt esse anim quis consectetur dolore irure pariatur laborum esse voluptate non id eu cillum veniam amet fugiat duis fugiat aliqua consectetur officia exercitation ad quis eu ea exercitation Lorem culpa sit consectetur nisi proident culpa sunt non do occaecat dolore pariatur culpa velit elit esse magna ullamco laboris ullamco eu proident cupidatat incididunt ipsum consequat reprehenderit duis ea incididunt ipsum voluptate Lorem officia deserunt ut esse exercitation ullamco labore aliquip sunt culpa exercitation pariatur exercitation proident ad
+                  Lorem ipsum dolor sit amet, laboris aliqua consectetur sit non aliqua proident ea occaecat incididunt sunt dolor non consequat proident fugiat reprehenderit ut ea laboris culpa sint incididunt esse anim quis consectetur dolore irure pariatur laborum esse voluptate non id eu cillum veniam amet fugiat duis fugiat aliqua consectetur officia exercitation ad quis eu ea exercitation Lorem culpa sit consectetur nisi proident culpa sunt non do occaecat dolore pariatur culpa velit elit esse magna ullamco laboris ullamco eu proident cupidatat incididunt ipsum consequat reprehenderit duis ea incididunt ipsum voluptate Lorem officia deserunt ut esse exercitation ullamco labore aliquip sunt culpa exercitation pariatur exercitation proident ad
+                </div>
+              </div>
+              <div class="flex flex-cell flex-grow scroll-wrapper">
+                <div class="box scroll scroll-x">
+                  <div style="width: 800px">
+                    <!-- prettier-ignore -->
+                    Lorem ipsum dolor sit amet, laboris aliqua consectetur sit non aliqua proident ea occaecat incididunt sunt dolor non consequat proident fugiat reprehenderit ut ea laboris culpa sint incididunt esse anim quis consectetur dolore irure pariatur laborum esse voluptate non id eu cillum veniam amet fugiat duis fugiat aliqua consectetur officia exercitation ad quis eu ea exercitation Lorem culpa sit consectetur nisi proident culpa sunt non do occaecat dolore pariatur culpa velit elit esse magna ullamco laboris ullamco eu proident cupidatat incididunt ipsum consequat reprehenderit duis ea incididunt ipsum voluptate Lorem officia deserunt ut esse exercitation ullamco labore aliquip sunt culpa exercitation pariatur exercitation proident ad
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-cell flex-grow">
+                <div class="box">
+                  Lorem ipsum dolor sit amet, sunt cillum reprehenderit ut
+                  pariatur aute non irure enim laboris
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-cell"><div class="box"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Flex Wrap</h3>
+    <p>给每个单元最大, 最小宽度, 然后交给 Flex 自动排盘</p>
+    <div class="flex-container">
+      <div class="flex flex-row flex-wrap">
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+        <div class="flex flex-cell flex-grow bar"><div class="box"></div></div>
+      </div>
+    </div>
+  </body>
+</html>
