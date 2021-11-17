@@ -1,0 +1,12 @@
+{
+  "name": "html-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server ./src -o",
+    "deploy": "npx cross-var npx gh-pages -d src"
+  },
+  "author": "",
+  "license": "ISC"
+}

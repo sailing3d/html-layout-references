@@ -1,0 +1,53 @@
+/* flex layout */
+
+.flex-container {
+  margin: -5px -5px;
+}
+.flex-container .flex {
+  display: flex;
+  box-sizing: border-box;
+}
+.flex-container .flex-row {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+}
+.flex-container .flex-col {
+  height: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.flex-container .flex-cell {
+  box-sizing: border-box;
+  margin: 5px;
+}
+.flex-container .flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-container .flex-grow {
+  flex: 1;
+  flex-grow: 1;
+}
+.flex-container .scroll-wrapper {
+  overflow: hidden;
+}
+.flex-container .scroll-wrapper .scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.flex-container .scroll-wrapper .scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #999;
+}
+.flex-container .scroll-wrapper .scroll-y {
+  overflow-y: auto;
+  width: 100%;
+}
+.flex-container .scroll-wrapper .scroll-x {
+  height: 100%;
+  overflow-x: auto;
+}

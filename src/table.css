@@ -1,0 +1,26 @@
+/* 表格样式 */
+
+.table-container table.table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.table-container table.table > tbody > tr > td {
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 自适应表格 */
+.table-container .adaptive-table {
+  width: 100%;
+}
+/* 行列背景样式 */
+.table-container table.table > tbody > tr:nth-of-type(2n) {
+  background: #dddd;
+}
+.table-container table.table > tbody > tr > td:nth-of-type(2n) {
+  background: #ccc6;
+}
+.table-container table.table > tbody > tr:hover {
+  background: #ccc;
+}
